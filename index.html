@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia das Mães</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container" id="mainContainer">
+        
+        <!-- View 1: Home -->
+        <div id="homeView" class="view">
+            <div class="hero-section">
+                <div class="image-wrapper" id="imageTrigger">
+                    <img src="img/foto11.jpeg" alt="Dia das Mães" id="heroImage">
+                    <div class="overlay"></div>
+                </div>
+                <div class="content">
+                    <h1>Feliz Dia das Mães!</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- View 2: Surprise (Cards) -->
+        <div id="surpriseView" class="view hidden">
+            <header>
+                <h1>Para Você, Mamãe</h1>
+                <p class="progress-text">Abra todos os cartões: <span id="count">0</span>/6</p>
+            </header>
+            
+            <div class="cards-grid">
+                <div class="card" data-id="1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto.jpeg" alt="Memória 1">
+                        </div>
+                        <div class="card-back">A senhora é uma mulher incrivel!</div>
+                    </div>
+                </div>
+                <div class="card" data-id="2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto1.jpeg" alt="Memória 2">
+                        </div>
+                        <div class="card-back">Obrigado por tudo o que faz.</div>
+                    </div>
+                </div>
+                <div class="card" data-id="3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto7.jpeg" alt="Memória 3">
+                        </div>
+                        <div class="card-back">Meu maior exemplo de força.</div>
+                    </div>
+                </div>
+                <div class="card" data-id="4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto6.jpeg" alt="Memória 4">
+                        </div>
+                        <div class="card-back">Te amo infinitamente!</div>
+                    </div>
+                </div>
+                <div class="card" data-id="5">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto9.jpeg" alt="Memória 5">
+                        </div>
+                        <div class="card-back">Você merece o mundo.</div>
+                    </div>
+                </div>
+                <div class="card" data-id="6">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/foto10.jpeg" alt="Memória 6">
+                        </div>
+                        <div class="card-back">Sempre estarei aqui por você.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="backBtn" class="back-button">Voltar</button>
+        </div>
+
+        <!-- View 3: Final Page -->
+        <div id="finalView" class="view hidden">
+            <div class="final-container">
+                <div class="crown">👑</div>
+                <div class="photo-frame">
+                    <img src="img/foto2.jpeg" alt="Nossa Rainha">
+                </div>
+                <div class="final-content">
+                    <h2>Para a Nossa Rainha</h2>
+                    <p class="heart-text">Você é o coração da nossa família e a razão do nosso sorriso. Te amamos para sempre!</p>
+                </div>
+            </div>
+            <button id="restartBtn" class="back-button">Ver de novo</button>
+        </div>
+
+    </div>
+
+    <div id="confetti-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
